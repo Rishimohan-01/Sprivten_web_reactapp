@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+#Testimonials .testimonials_title .break {
+  display: none;
+}
+#Testimonials .break {
+  display: block;
+}
+
+#Testimonials {
+  background: #f3f3f3;
+  padding: 80px 0px;
+}
+
+.testimonials_title {
+  color: #252b42;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  margin: 0px;
+}
+
+.testimonials_para {
+  margin: 0px;
+  color: #737373;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+.TestimonialCards {
+  padding-top: 80px;
+}
+
+#Testimonials .CardBody {
+  background: #ffffff;
+  padding: 30px 35px;
+  border-radius: 5px;
+}
+
+.icon-star {
+  color: #f3cd03;
+  font-size: 22px;
+}
+
+.Testimonials_feedback {
+  margin: 0px;
+  padding: 20px 0px;
+  color: #737373;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+.Clients {
+  display: flex;
+  align-items: center;
+}
+
+.Clients a {
+  color: #ffa62b;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+.Clients p {
+  margin: 0px;
+  padding-left: 20px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+
+
+/* Responsive css  for mobile view */
+@media only screen and (max-width: 425px) {
+  .testimonials_title .break {
+    display: block !important;
+  }
+
+  .testimonials_para .break {
+    display: none !important;
+  }
+}
+/* Responsive css  for mobile view */
+
+/* make testimonials responsive for tab view */
+@media only screen and (max-width: 768px) {
+  #Testimonials .CardBody {
+    text-align: center;
+  }
+
+  .Testimonials_feedback {
+    text-align: center !important;
+  }
+
+  .Clients {
+    justify-content: center;
+  }
+}
+/* make testimonials responsive for tab view */

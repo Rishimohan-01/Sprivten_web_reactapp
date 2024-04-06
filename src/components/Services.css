@@ -1,0 +1,63 @@
+.Services {
+  background: linear-gradient(
+    0deg,
+    rgba(11, 53, 61, 1) 50%,
+    rgba(243, 243, 243, 1) 50%
+  );
+  padding: 80px 0px;
+}
+
+.Services .break {
+  display: block;
+}
+
+.Services h2 {
+  color: #252b42;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+}
+
+.Services p {
+  margin: 0px;
+  color: #737373;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .Services video {
+    width: 270px;
+    height: 430px;
+    background-image: url(../assets/images/cover-potrait.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+/* make responsive why us section for mobile view */
+@media only screen and (max-width: 425px) {
+  #services_title .break {
+    display: none;
+  }
+
+  #services_para .break {
+    display: none;
+  }
+}
+/* make responsive why us section for mobile view */
+
+/* Make responsive services section for tab view */
+@media only screen and (max-width: 768px) {
+  .Services video {
+    width: 100% !important;
+  }
+}
+/* Make responsive services section for tab view */

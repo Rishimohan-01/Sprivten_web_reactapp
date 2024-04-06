@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.ContactContent {
+  padding: 40px 0px;
+}
+
+.ContactContent_title {
+  color: #252b42;
+  font-family: Montserrat;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.ContactContent_para {
+  text-align: left;
+  color: #737373;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+#ContactContent_btn {
+  text-align: right;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.Contact_btn {
+  text-align: center;
+  padding: 15px 40px;
+  color: #ffffff;
+  background: #ffa62b;
+  border: 1px solid #ffa62b;
+  border-radius: 5px;
+
+  font-size: 14px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+}
+
+/* Make responsive contact content sectioin for mobile view */
+@media only screen and (max-width: 425px) {
+  .Contact_btn {
+    width: 100%;
+  }
+
+  #ContactContent_btn {
+    padding-top: 40px;
+  }
+
+  .footer-logo {
+    padding-bottom: 50px;
+  }
+
+  .footer-social {
+    justify-content: start !important;
+  }
+}
+/* Make responsive contact content sectioin for mobile view */

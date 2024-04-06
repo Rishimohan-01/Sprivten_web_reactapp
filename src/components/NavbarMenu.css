@@ -1,0 +1,422 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  background: url(../assets/images/background.png) no-repeat center;
+  background-size: cover;
+}
+
+.navbar-brand {
+  color: #252b42;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  margin-right: 36px;
+  padding: 0px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:last-child {
+  margin-right: 18px;
+}
+
+.nav-link {
+  color: #737373 !important;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+.nav-link.active {
+  color: #ffa62b !important;
+  border-bottom: 2px solid #ffa62b;
+}
+
+.nav-link:hover {
+  color: #ffa62b !important;
+}
+
+/* Navbar top fixed scroll animation */
+
+.Top-menu {
+  position: sticky;
+  padding-top: 36px;
+  transition: 0.4s ease;
+}
+
+.navbar-fixed {
+  width: 100%;
+  position: fixed;
+  padding-top: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px 0 rgba(41, 41, 42, 0.07);
+  transition: 0.4s;
+  z-index: 999;
+}
+
+/* Navbar top fixed scroll animation */
+
+/* ============== #search icon ================= */
+
+#wrap {
+  padding: 0px;
+  position: relative;
+  top: 1px;
+}
+
+#wrap .searchBar {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+#wrap .searchIco {
+  position: absolute;
+  top: 3px;
+  right: -5px;
+
+  color: #737373;
+  font-size: 16px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+#wrap .closeIco {
+  position: absolute;
+  bottom: 2px;
+  right: -8px;
+  color: #737373;
+  font-size: 22px;
+  display: none;
+  z-index: 10;
+  cursor: pointer;
+}
+
+input#search {
+  width: 0px;
+  height: 0px;
+}
+
+#wrap input {
+  height: 34px;
+  padding: 0px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  border: none !important;
+  outline: none;
+  color: #737373;
+  width: 0px;
+  position: absolute;
+  top: -7px;
+  right: -16px;
+  background: none;
+  z-index: 1;
+  background-color: #f9f9f9;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 10px;
+  cursor: text;
+}
+
+#wrap input.active {
+  padding-left: 15px;
+  padding-right: 40px;
+  border: 1px solid #ffa62b !important;
+}
+
+#wrap .searchIco,
+.closeIco {
+  cursor: pointer;
+}
+
+/* Hero Section */
+
+.hero {
+  padding: 40px 0px 80px 0px;
+}
+
+.hero h1 {
+  color: #252b42;
+  font-family: Montserrat;
+  font-size: 3.7rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0.2px;
+}
+
+.hero p {
+  color: #737373;
+  font-family: Montserrat;
+  text-align: left;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  padding: 20px 0px;
+}
+
+.hero .btn-1 {
+  margin-right: 10px;
+  color: #ffffff;
+  background: #00a0c1;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  border-radius: 37px;
+  border: 1px solid #00a0c1;
+  padding: 10px 36px;
+}
+
+.hero .btn-1:hover {
+  color: #ffffff;
+  border: 1px solid #00a1c1d8;
+  background-color: #00a1c1d8;
+}
+
+.hero .btn-1:active {
+  background-color: #00a0c1 !important;
+  border-color: #00a0c1;
+}
+
+.hero .btn-2 {
+  color: #00a0c1;
+  background-color: transparent;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  border-radius: 37px;
+  border: 1px solid #00a0c1;
+  padding: 10px 36px;
+}
+
+.hero .btn a {
+  color: #00a0c1;
+  text-decoration: none;
+}
+
+.hero .btn-2:hover {
+  color: #00a1c1d8;
+  background-color: transparent;
+  border: 1px solid #00a1c1d8;
+}
+
+.hero .btn-2:active {
+  background-color: transparent !important;
+  border-color: #00a0c1;
+}
+
+/* Hero Section */
+
+/* Form */
+.hero Form {
+  width: 355px;
+  margin-left: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.hero Form h3 {
+  padding-bottom: 30px;
+  color: #252b42;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+}
+
+.hero .form-label {
+  color: #252b42;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+.hero .label {
+  color: #252b42;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin-bottom: 8px;
+}
+
+.hero-form-btn {
+  width: 100%;
+  margin-top: 30px;
+  padding: 15px 50px;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  border-radius: 5px;
+  background: #ffa62b;
+  border: none;
+}
+
+.hero-form-btn:hover {
+  color: #ffffff;
+  border: none;
+  background-color: #ffb855;
+}
+
+/* Form */
+
+/* Responsive css  for mobile view */
+@media only screen and (max-width: 375px) {
+  h1 {
+    font-size: 35px !important;
+    line-height: 48px !important;
+  }
+
+  h2 {
+    font-size: 35px !important;
+    line-height: 48px !important;
+  }
+
+  .hero p {
+    font-size: 16px !important;
+    line-height: 28px !important;
+  }
+
+  .hero .btn-1 {
+    margin: 0px auto;
+    display: block;
+    justify-content: center;
+  }
+  .hero .btn-2 {
+    margin-top: 20px !important;
+  }
+}
+/* Responsive css  for mobile view */
+
+/* Responsive css  for tab view */
+@media only screen and (max-width: 768px) {
+  .navbar-toggler,
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+
+  #wrap {
+    position: absolute;
+    margin: 0 auto;
+    top: 46px;
+    right: 85px;
+  }
+
+  .navbar-fixed #wrap {
+    top: 20px;
+    transition: 0.4s;
+  }
+
+  #wrap input {
+    top: -4px;
+  }
+
+  #wrap .closeIco {
+    top: 2px;
+  }
+
+  #wrap .searchIco,
+  .closeIco {
+    font-size: 20px;
+  }
+
+  .navbar-toggler {
+    font-size: 30px;
+    padding-right: 0px;
+  }
+
+  /* Navbar custom menu */
+  .navbar-expand-lg .navbar-nav .nav-link {
+    margin: 0px;
+    padding: 15px 0px;
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link:hover {
+    background-color: #f9f9f9;
+    transition: 0.2s;
+  }
+
+  /* Navbar custom menu */
+
+  /* Make the hero responsive for Tab  View */
+
+  .hero h1 {
+    font-size: 7vw;
+  }
+
+  .hero p {
+    font-size: 2.5vw;
+    text-align: center;
+  }
+
+  .hero Form {
+    margin-top: 40px;
+    width: 100%;
+  }
+}
+/* Responsive css  for tab view */
+
+/* Responsive css  for mobile view */
+@media only screen and (max-width: 425px) {
+  #wrap {
+    right: 65px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+  }
+
+  .hero p {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+  }
+}
+/* Responsive css  for mobile view */

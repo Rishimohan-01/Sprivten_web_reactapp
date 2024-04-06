@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+#Whyus h2 .break {
+  display: none;
+}
+#Whyus .break {
+  display: block;
+}
+
+#Whyus {
+  padding: 80px 0px;
+}
+#whyus_title {
+  color: #252b42;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  margin: 0px;
+}
+
+#whyus_para {
+  color: #737373;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  margin: 0px;
+}
+
+.FeaturedCards {
+  margin: 0;
+  padding: 80px 0px 0px 0px;
+}
+
+.CardBody {
+  padding: 1px;
+  background: #d9edff;
+  border: none;
+  border-radius: 10px;
+}
+
+.card-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  margin: 0px;
+}
+
+.whyus-icon {
+  width: 72px;
+  height: 72px;
+  font-size: 32px;
+  background: #ffffff;
+  padding: 20px;
+  margin-right: 15px;
+  border-radius: 50%;
+  color: #ffa62b;
+}
+
+.card-title h5 {
+  color: #252b42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+
+.CardFeatures {
+  border: 1px solid #737373;
+  padding: 30px 24px;
+  background: #ffffff;
+  border: 1px solid #a9d6ff;
+  border-radius: 10px;
+}
+
+.CardFeatures p {
+  color: #737373;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin-bottom: 5px;
+}
+
+.CardFeatures a {
+  color: #ffa62b;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+/* make responsive why us section for mobile view */
+@media only screen and (max-width: 425px) {
+  #whyus_title .break {
+    display: block;
+  }
+
+  #whyus_para .break {
+    display: none;
+  }
+}
+/* make responsive why us section for mobile view */

@@ -1,0 +1,179 @@
+/* Footer logo & social*/
+
+.footer-body {
+  background: #252b42;
+}
+
+.footer-body .border-bottom {
+  padding: 40px 0px;
+  border-bottom: 1px solid #364067 !important;
+}
+
+.footer-body .footer-logo h3 {
+  margin: 0px;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+}
+
+.footer-body .footer-social a {
+  padding-right: 1rem;
+  font-size: 24px;
+}
+
+.footer-body .footer-social a:first-child {
+  color: #335bf5;
+}
+.footer-body .footer-social a:nth-child(2) {
+  color: #e51f5a;
+}
+.footer-body .footer-social a:nth-child(3) {
+  color: #21a6df;
+}
+.footer-body .footer-social a:last-child {
+  color: #e42f08;
+}
+
+/* Footer logo & social*/
+
+/* Footer links & get in touch */
+
+.footer-body .footer-links {
+  padding: 70px 0px;
+}
+
+.footer-body .footer-links h5 {
+  margin: 0px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+
+.footer-body .footer-links ul li {
+  padding-left: 0px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-family: Montserrat;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+.footer-body .footer-links ul li a {
+  text-decoration: none;
+  color: #bdbdbd;
+}
+
+.footer-body .footer-links ul li a:hover {
+  color: #ffffff;
+}
+
+.footer-body .footer-links p {
+  color: #bdbdbd;
+  text-align: left;
+  font-size: 12px;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+}
+
+.footer-body .form-control {
+  height: 54px;
+}
+
+.footer-body .form-control::placeholder {
+  padding-left: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #bdbdbd;
+  font-size: 14px;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+}
+
+.footer-body .input-group-text {
+  padding: 0px;
+}
+
+.footer-body Button {
+  color: #ffffff;
+  background: #ffa62b;
+  padding: 12px 20px;
+
+  border: none;
+  border-color: transparent;
+  border-radius: 0px 5px 5px 0px;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+}
+
+.footer-body Button:hover {
+  background-color: #ffb855;
+}
+
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  background-color: #ffb855;
+}
+
+/* Footer links & get in touch */
+
+/* Footer copyright text */
+
+.footer-Copyright-text {
+  padding: 25px 0px;
+  background: #16697a;
+}
+
+.footer-Copyright-text p {
+  margin: 0px;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Montserrat;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+/* Footer copyright text */
+
+.footer-body .form-control,
+.footer-body .form-control:focus,
+.footer-body .form-control:active {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.form-control,
+.form-control:focus,
+.form-control:active {
+  outline: none;
+  border-color: #bdbdbd;
+  box-shadow: none;
+}
+
+/* Make footer section responsive for tab view */
+@media only screen and (max-width: 768px) {
+  .footer-Copyright-text p {
+    text-align: center;
+  }
+}
+/* Make footer section responsive for tab view */

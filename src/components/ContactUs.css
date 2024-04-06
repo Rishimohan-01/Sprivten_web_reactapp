@@ -1,0 +1,82 @@
+.Contact {
+  background: url(../assets/images/contact-form-bg.png) no-repeat center;
+  background-size: cover;
+  padding: 80px 0px;
+}
+
+.Contact h5 {
+  color: #252b42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+
+.Contact h2 {
+  color: #252b42;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+}
+
+.Contact Form {
+  padding: 40px 0px;
+}
+
+.form-control {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+  height: 50px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  color: #737373;
+  padding-left: 21px;
+  background: #f9f9f9;
+  border: 1px solid #bdbdbd;
+}
+
+.form-control::placeholder {
+  color: #bdbdbd;
+}
+
+/* ==========  Contact us Dropdown select menu   ======== */
+
+/* Contact us form Dropdown select menu */
+
+textarea.form-control {
+  height: 140px;
+}
+
+.Contact Button {
+  text-align: center;
+  padding: 15px 40px;
+  color: #ffffff;
+  background: #ffa62b;
+  border: 1px solid #ffa62b;
+  border-radius: 5px;
+
+  font-size: 14px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+}
+
+.Contact button:hover {
+  border: 1px solid #ffa62b;
+  background-color: #ffb855;
+}
+
+/* Make contact us section responsive for tab view */
+.Contact Button {
+  width: 100%;
+}
+/* Make contact us section responsive for tab view */
