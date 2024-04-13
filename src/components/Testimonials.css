@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-#Testimonials .testimonials_title .break {
+.Testimonials .testimonials_title .break {
   display: none;
 }
-#Testimonials .break {
+.Testimonials .break {
   display: block;
 }
 
-#Testimonials {
+.Testimonials {
   background: #f3f3f3;
   padding: 80px 0px;
 }
@@ -38,7 +38,7 @@
   padding-top: 80px;
 }
 
-#Testimonials .CardBody {
+.Testimonials .CardBody {
   background: #ffffff;
   padding: 30px 35px;
   border-radius: 5px;
@@ -88,8 +88,6 @@
   letter-spacing: 0.2px;
 }
 
-
-
 /* Responsive css  for mobile view */
 @media only screen and (max-width: 425px) {
   .testimonials_title .break {
@@ -104,7 +102,7 @@
 
 /* make testimonials responsive for tab view */
 @media only screen and (max-width: 768px) {
-  #Testimonials .CardBody {
+  .Testimonials .CardBody {
     text-align: center;
   }
 

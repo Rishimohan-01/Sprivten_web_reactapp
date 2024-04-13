@@ -30,8 +30,84 @@ function ContactUs() {
   ];
   // Dropdown  menu
 
+  // React select dropdown design
+  const customStyles = {
+    control: (provided) => ({
+      // class attribute : class=" css-i32vvf-control"
+      ...provided,
+      background: "#f9f9f9",
+      display: "flex",
+      flexWrap: "nowrap",
+      borderRadius: "5px",
+      borderColor: "#bdbdbd;",
+      paddingLeft: "14px",
+      height: "50px",
+      boxShadow: "none",
+      "&:hover": {
+        borderColor: "#bdbdbd;",
+      },
+    }),
+
+    singleValue: (provided) => {
+      return {
+        ...provided,
+        color: "#737373",
+        fontFamily: "Montserrat",
+        fontSize: "14px",
+        fontWeight: "600",
+        lineHeight: "28px",
+        letterSpacing: "0.2px",
+      };
+    },
+
+    placeholder: (defaultStyles) => {
+      return {
+        ...defaultStyles,
+        color: "#bdbdbd",
+        fontFamily: "Montserrat",
+        fontSize: "14px",
+        fontWeight: "600",
+        lineHeight: "28px",
+        letterSpacing: "0.2px",
+      };
+    },
+    menu: (provided) => {
+      return {
+        ...provided,
+        background: "#f9f9f9",
+        borderRadius: "5px",
+      };
+    },
+    dropdownIndicator: (provided) => {
+      return {
+        ...provided,
+        color: "#bdbdbd",
+        "&:hover": {
+          color: "#bdbdbd",
+        },
+      };
+    },
+    indicatorSeparator: (provided) => {
+      return {
+        ...provided,
+        display: "none",
+      };
+    },
+
+    option: (provided, state) => {
+      return {
+        ...provided,
+        backgroundColor: state.isSelected ? "#737373" : "#f9f9f9",
+        "&:hover": {
+          backgroundColor: state.isSelected ? "#737373" : "rgb(222, 235, 255)",
+        },
+      };
+    },
+  };
+  // React select dropdown design
+
   return (
-    <div className="Contact">
+    <div id="contact" className="Contact">
       <Container>
         <Row>
           <Col>
@@ -68,6 +144,7 @@ function ContactUs() {
                   controlId="validationCustom03"
                 >
                   <Select
+                    styles={customStyles}
                     isSearchable={false}
                     placeholder="Please Select"
                     options={options2}
@@ -84,6 +161,7 @@ function ContactUs() {
                   controlId="validationCustom04"
                 >
                   <Select
+                    styles={customStyles}
                     isSearchable={false}
                     placeholder="4:00 Available"
                     options={options3}

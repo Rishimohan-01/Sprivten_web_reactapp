@@ -6,7 +6,7 @@ import { Icon } from "@iconify/react";
 
 function Testimonials() {
   return (
-    <div id="Testimonials">
+    <div id="testimonials" className="Testimonials">
       <Container>
         <Row>
           <Col>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import React from "react";
 import $ from "jquery";
 import "./NavbarMenu.css";
@@ -15,11 +15,15 @@ import { Icon } from "@iconify/react";
 import Select from "react-select";
 
 function NavbarMenu() {
+  // Scroll active effect
+
+  // Scroll active effect
+
   // Navbar top fixed scroll animation jquery
   $(document).ready(function () {
     var navbar = $(".navbar");
     $(window).scroll(function () {
-      if ($(this).scrollTop() > 800) {
+      if ($(this).scrollTop() > 600) {
         navbar.addClass("navbar-fixed");
       } else {
         navbar.removeClass("navbar-fixed");
@@ -49,6 +53,7 @@ function NavbarMenu() {
 
   // nav-menu search-bar
 
+  // Validation
   const [validated, setValidated] = useState(false);
 
   const handleSubmit = (event) => {
@@ -60,6 +65,7 @@ function NavbarMenu() {
 
     setValidated(true);
   };
+  // Validation
 
   // Dropdown  menu
 
@@ -77,6 +83,82 @@ function NavbarMenu() {
 
   // Dropdown  menu
 
+  // React select dropdown design
+  const customStyles = {
+    control: (provided) => ({
+      // class attribute : class=" css-i32vvf-control"
+      ...provided,
+      background: "#f9f9f9",
+      display: "flex",
+      flexWrap: "nowrap",
+      borderRadius: "5px",
+      borderColor: "#bdbdbd;",
+      paddingLeft: "14px",
+      height: "50px",
+      boxShadow: "none",
+      "&:hover": {
+        borderColor: "#bdbdbd;",
+      },
+    }),
+
+    singleValue: (provided) => {
+      return {
+        ...provided,
+        color: "#737373",
+        fontFamily: "Montserrat",
+        fontSize: "14px",
+        fontWeight: "600",
+        lineHeight: "28px",
+        letterSpacing: "0.2px",
+      };
+    },
+
+    placeholder: (defaultStyles) => {
+      return {
+        ...defaultStyles,
+        color: "#bdbdbd",
+        fontFamily: "Montserrat",
+        fontSize: "14px",
+        fontWeight: "600",
+        lineHeight: "28px",
+        letterSpacing: "0.2px",
+      };
+    },
+    menu: (provided) => {
+      return {
+        ...provided,
+        background: "#f9f9f9",
+        borderRadius: "5px",
+      };
+    },
+    dropdownIndicator: (provided) => {
+      return {
+        ...provided,
+        color: "#bdbdbd",
+        "&:hover": {
+          color: "#bdbdbd",
+        },
+      };
+    },
+    indicatorSeparator: (provided) => {
+      return {
+        ...provided,
+        display: "none",
+      };
+    },
+
+    option: (provided, state) => {
+      return {
+        ...provided,
+        backgroundColor: state.isSelected ? "#737373" : "#f9f9f9",
+        "&:hover": {
+          backgroundColor: state.isSelected ? "#737373" : "rgb(222, 235, 255)",
+        },
+      };
+    },
+  };
+  // React select dropdown design
+
   return (
     <div id="home" className="header">
       <Navbar expand="lg" className="Top-menu ">
@@ -86,12 +168,22 @@ function NavbarMenu() {
             <Icon icon="bx:menu-alt-right" />
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto nav-link">
-              <Nav.Link href="#WhyUs">Why Us</Nav.Link>
-              <Nav.Link href="#Services">Services</Nav.Link>
-              <Nav.Link href="#Testmonials">Testimonials</Nav.Link>
-              <Nav.Link href="#OurTeam">Our Team</Nav.Link>
-              <Nav.Link href="#Contact">Contact</Nav.Link>
+            <Nav className="ms-auto nav-link" as={"ul"}>
+              <Nav.Item as={"li"}>
+                <Nav.Link href="#Whyus">Why Us</Nav.Link>
+              </Nav.Item>
+              <Nav.Item as={"li"}>
+                <Nav.Link href="#services">Services</Nav.Link>
+              </Nav.Item>
+              <Nav.Item as={"li"}>
+                <Nav.Link href="#testimonials">Testimonials</Nav.Link>
+              </Nav.Item>
+              <Nav.Item as={"li"}>
+                <Nav.Link href="#ourteam">Our Team</Nav.Link>
+              </Nav.Item>
+              <Nav.Item as={"li"}>
+                <Nav.Link href="#contact">Contact</Nav.Link>
+              </Nav.Item>
             </Nav>
           </Navbar.Collapse>
           <div id="wrap" className="navbar-fixed-top">
@@ -164,12 +256,7 @@ function NavbarMenu() {
                     controlId="validationCustom03"
                   >
                     <Select
-                      styles={{
-                        control: (baseStyles, state) => ({
-                          ...baseStyles,
-                          borderColor: state.isFocused ? "#bdbdbd" : "#bdbdbd",
-                        }),
-                      }}
+                      styles={customStyles}
                       isSearchable={false}
                       placeholder="Please Select"
                       options={options}
@@ -189,6 +276,7 @@ function NavbarMenu() {
                     controlId="validationCustom04"
                   >
                     <Select
+                      styles={customStyles}
                       isSearchable={false}
                       placeholder="4:00 Available"
                       options={options1}

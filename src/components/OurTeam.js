@@ -7,7 +7,7 @@ import { Icon } from "@iconify/react";
 
 function OurTeam() {
   return (
-    <div className="ourTeam">
+    <div id="ourteam" className="ourTeam">
       <Container>
         <Row>
           <Col>
