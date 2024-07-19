@@ -163,7 +163,7 @@ function NavbarMenu() {
     <div id="home" className="header">
       <Navbar expand="lg" className="Top-menu ">
         <Container>
-          <Navbar.Brand href="home">Sprivaten</Navbar.Brand>
+          <Navbar.Brand href="#home">Sprivaten</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <Icon icon="bx:menu-alt-right" />
           </Navbar.Toggle>
